@@ -54,7 +54,7 @@ async def get_filtered_pairs():
     }
 
     # Filtering criteria
-    MIN_MAKERS = 500
+    MIN_MAKERS = 7000
     MIN_VOLUME = 200_000
     MIN_MARKET_CAP = 250_000
     MIN_LIQUIDITY = 100_000
@@ -130,4 +130,5 @@ async def get_filtered_pairs():
                     })
 
     logging.info(f"Filtering complete. Total unique tokens: {len(filtered_tokens)}.")
+    
     return filtered_tokens
